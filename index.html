@@ -3,194 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Napoli - Halloween Game</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Fitclub</title>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">Napoli</div>
-        <ul class="nav-menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#club">The club</a></li>
-          <li><a href="#season">Season</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#tickets">Tickets</a></li>
-          <li><a href="#shop">Shop</a></li>
-          <li><a href="#account">Account</a></li>
-        </ul>
-        <div class="nav-buttons">
-          <button class="btn-outline">Button</button>
-          <button class="btn-primary">Button</button>
-        </div>
+    <header>
+      <div class="header_left">
+        <img class="Logo" src="FITClub.png" alt="1" />
       </div>
-    </nav>
-
-    <!-- Hero Section with Team Photo -->
-    <section class="hero" id="home">
-      <div class="hero-background">
-        <div class="hero-team-photo"></div>
+      <div class="header_Right">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
       </div>
-      <div class="hero-content">
-        <h1 class="hero-title">HALLOWEEN<br />GAME</h1>
-      </div>
-    </section>
+    </header>
 
-    <!-- Current Best Players Section -->
-    <section class="players-section" id="club">
-      <div class="section-header">
-        <h2>Current best players</h2>
-        <p class="section-subtitle">
-          How are they different? It is to their credit that the team is
-          motivated
-        </p>
-      </div>
+    <main>
+      <div class="hero">
+        <h1 class="logo">FIT<span style="color: white">Club</span></h1>
+        <h2 class="tagline">Challenge <span>Yourself</span></h2>
 
-      <div class="players-grid">
-        <div class="player-card">
-          <div class="player-circle">
-            <div class="player-img"></div>
-          </div>
-          <h3>KHVICHA<br />KVARATSKHELIA</h3>
-          <div class="player-stats-table">
-            <div class="stat-row">
-              <span class="stat-name">Appearances</span>
-              <span class="stat-number">17</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-name">Goals</span>
-              <span class="stat-number">8</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-name">Assists</span>
-              <span class="stat-number">8</span>
-            </div>
-          </div>
-        </div>
+        <div class="dropdowns">
+          <select class="select_1">
+            <option disabled selected>Pick a City</option>
+            <option>Tbilisi</option>
+            <option>Batumi</option>
+            <option>Kutaisi</option>
+          </select>
 
-        <div class="player-card">
-          <div class="player-circle">
-            <div class="player-img"></div>
-          </div>
-          <h3>VICTOR<br />OSIMHEN</h3>
-          <div class="player-stats-table">
-            <div class="stat-row">
-              <span class="stat-name">Appearances</span>
-              <span class="stat-number">14</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-name">Goals</span>
-              <span class="stat-number">10</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-name">Assists</span>
-              <span class="stat-number">2</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="player-card">
-          <div class="player-circle">
-            <div class="player-img"></div>
-          </div>
-          <h3>STANISLAV<br />LOBOTKA</h3>
-          <div class="player-stats-table">
-            <div class="stat-row">
-              <span class="stat-name">Appearances</span>
-              <span class="stat-number">21</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-name">Goals</span>
-              <span class="stat-number">1</span>
-            </div>
-            <div class="stat-row">
-              <span class="stat-name">Assists</span>
-              <span class="stat-number">1</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Buy Uniforms Section -->
-    <section class="uniforms-section" id="shop">
-      <div class="section-header">
-        <h2>Buy your favorite uniform</h2>
-      </div>
-
-      <div class="uniforms-grid">
-        <div class="uniform-card">
-          <div class="uniform-image blue-gradient"></div>
-          <h3>SSC Napoli Halloween Match Shirt 2022</h3>
-          <p class="uniform-price">150<span>$</span></p>
-          <div class="uniform-buttons">
-            <button class="btn-shop">Shop</button>
-            <button class="btn-add-cart">Add to cart</button>
-          </div>
-        </div>
-
-        <div class="uniform-card">
-          <div class="uniform-image blue-light-gradient"></div>
-          <h3>SSC Napoli Home Match Shirt 2022</h3>
-          <p class="uniform-price">150<span>$</span></p>
-          <div class="uniform-buttons">
-            <button class="btn-shop">Shop</button>
-            <button class="btn-add-cart">Add to cart</button>
-          </div>
-        </div>
-
-        <div class="uniform-card">
-          <div class="uniform-image white-gradient"></div>
-          <h3>SSC Napoli Away Match Shirt 2022</h3>
-          <p class="uniform-price">150<span>$</span></p>
-          <div class="uniform-buttons">
-            <button class="btn-shop">Shop</button>
-            <button class="btn-add-cart">Add to cart</button>
-          </div>
+          <select class="select_2">
+            <option disabled selected>Pick a Trainer</option>
+            <option>Anna</option>
+            <option>Giorgi</option>
+            <option>Nika</option>
+          </select>
         </div>
       </div>
 
-      <!-- Also Order Section -->
-      <div class="also-order-section">
-        <h3>You can also order</h3>
-        <div class="extra-items">
-          <div class="extra-item yellow-jersey"></div>
-          <div class="extra-item blue-pants"></div>
+      <section class="title-section">
+        <h2 class="title">Meet <span class="highlight">Our</span> Trainers</h2>
+        <div class="underline"></div>
+      </section>
+
+      <div class="trainers">
+        <div class="card">
+          <img src="pirveli.png" alt="f" />
+          <p class="specialty">TRX Trainer</p>
+          <h3 class="name">
+            <span style="color: #f57325">Karolina</span> Garcia
+          </h3>
+          <button>Read More</button>
         </div>
-        <button class="btn-shop-main">Shop</button>
+
+        <div class="card">
+          <img src="cc9202c591c0d642acb8808773a1cfef5cb1fcc4.png" alt="s" />
+          <p class="specialty">Crossfit Trainer</p>
+          <h3 class="name">
+            <span style="color: #f57325">Victor</span> Freitas
+          </h3>
+          <button>Read More</button>
+        </div>
+
+        <div class="card">
+          <img src="e187383be8adcbeeebb89d7a4bfb871dd01c7909.jpg" alt="e" />
+          <p class="specialty">Personal Trainer</p>
+          <h3 class="name"><span style="color: #f57325">Joseph</span> Wayne</h3>
+          <button>Read More</button>
+        </div>
       </div>
 
-      <!-- Brands Section -->
-      <div class="brands-footer">
-        <div class="brand lete">Lete</div>
-        <div class="brand ea7">EA7</div>
-      </div>
-    </section>
+      <section class="programs-section">
+        <div class="program-header">
+          <h2>Our Programs</h2>
+          <p>Train in a new way. Train like a champion</p>
+        </div>
 
-    <!-- Footer -->
+        <div class="programs-container">
+          <div class="program_card">
+            <img
+              src="a15dc244f122b9fb5cffb0d55b13e46b5659d755.jpg"
+              alt="CrossFit"
+            />
+            <h1>Crossfit <span style="color: blue">></span></h1>
+            <p>
+              CrossFit workouts are challenging but worth the effort. And when
+              you pair the unparalleled fitness stimulus of these workouts with
+              sound nutrition, you get a program that is more transformative
+              than anything you'll find in any other gym anywhere
+            </p>
+          </div>
+          <div class="program_card">
+            <img
+              src="962a4111d92a4e37d24b5617aedc0480a2417536.png"
+              alt="yoga"
+            />
+            <h1>Yoga <span style="color: blue">></span></h1>
+            <p>Deepen your practise through traditional yoga flows with us</p>
+          </div>
+          <div class="program_card">
+            <img
+              src="ab57879e3315fc575ce47e14c01e69e4f60f2820.png"
+              alt="trx fitness"
+            />
+            <h1>TRX Fitness <span style="color: blue">></span></h1>
+            <p>
+              Our TRX Suspension Trainer™ strap is the only fitness method that
+              challenges you with your own bodyweight to get you stronger,
+              faster.
+            </p>
+          </div>
+          <div class="program_card">
+            <img
+              src="17f3b639de50ddfd55d9f5cdd6213ef6767cdcd2.jpg"
+              alt="ZUMBA"
+            />
+            <h1>Zumba <span style="color: blue">></span></h1>
+            <p>
+              Our Zumba strap is the only fitness method that challenges you
+              with your own bodyweight to get you stronger, faster.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="membership">
+        <h2 class="membership-title">Membership</h2>
+        <div class="membership-container">
+          <div class="membership-card">
+            <h3>Silver</h3>
+            <ul class="membership-features">
+              <li class="included">✓ Unlimited club access</li>
+              <li class="excluded">✗ Group attendance</li>
+              <li class="included">✓ Gym visits</li>
+              <li class="included">✓ Visits to the bath complex</li>
+              <li class="included">✓ Gym, fight club</li>
+            </ul>
+            <div class="membership-price">
+              <span class="price">$70</span>
+              <span style="color: #f57325" class="period">/month</span>
+            </div>
+            <button class="membership-btn">Choose</button>
+          </div>
+
+          <div class="membership-card featured">
+            <h3>Gold</h3>
+            <ul class="membership-features">
+              <li class="included">✓ Unlimited club access</li>
+              <li class="included">✓ Group attendance</li>
+              <li class="included">✓ Gym visits</li>
+              <li class="included">✓ Visits to the bath complex</li>
+              <li class="included">✓ Gym, fight club</li>
+            </ul>
+            <div class="membership-price">
+              <span class="price">$150</span>
+              <span class="period">/month</span>
+            </div>
+            <button class="membership-btn featured-btn">Choose</button>
+          </div>
+
+          <div class="membership-card">
+            <h3>Platinum</h3>
+            <ul class="membership-features">
+              <li class="included">✓ Unlimited club access</li>
+              <li class="included">✓ Group attendance</li>
+              <li class="excluded">✗ Gym visits</li>
+              <li class="excluded">✗ Visits to the bath complex</li>
+              <li class="excluded">✗ Gym, fight club</li>
+            </ul>
+            <div class="membership-price">
+              <span class="price">$90</span>
+              <span style="color: #f57325" class="period">/month</span>
+            </div>
+            <button class="membership-btn">Choose</button>
+          </div>
+        </div>
+      </section>
+      -
+    </main>
+
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-links">
-          <a href="#">Mobile app</a>
-          <a href="#">Community</a>
-          <a href="#">Company</a>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-logo">FIT<span>Club</span></h3>
+          <p class="footer-description">
+            N1 Fitness Club in the town to help you shape your ideal body
+          </p>
+          <div class="footer-social">
+            <a href="#"
+              ><img src="ic_baseline-facebook.png" alt="facebook"
+            /></a>
+            <a href="#"><img src="Vector.png" alt="twitter" /></a>
+            <a href="#"><img src="Vector (1).png" alt="instagram" /></a>
+            <a href="#"><img src="Vector (2).png" alt="message" /></a>
+          </div>
         </div>
-        <div class="footer-logo">N</div>
-        <div class="footer-links">
-          <a href="#">Help desk</a>
-          <a href="#">Blog</a>
-          <a href="#">Resources</a>
+
+        <div class="footer-columns-right">
+          <div class="footer-column">
+            <h4>Healthy Living</h4>
+            <ul>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Health</a></li>
+              <li><a href="#">Nutrition</a></li>
+              <li><a href="#">Health Recipes</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="#">Yoga Class</a></li>
+              <li><a href="#">Body Building</a></li>
+              <li><a href="#">Strong Muscle</a></li>
+              <li><a href="#">Sixpack Body</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="#">Workout Video</a></li>
+              <li><a href="#">Custom Workout</a></li>
+              <li><a href="#">Experts</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="footer-social">
-        <a href="#">f</a>
-        <a href="#">i</a>
-        <a href="#">y</a>
-        <a href="#">t</a>
-      </div>
-      <div class="footer-bottom">
-        <p>© SSC Napoli S.p.A. | Via dei Magazzini, 10 | 80138 Napoli Italy</p>
       </div>
     </footer>
   </body>
