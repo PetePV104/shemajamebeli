@@ -76,7 +76,7 @@ header a {
   color: #7073f0;
 }
 
-.dropdowns {
+.ragaca {
   margin-top: 40px;
   display: flex;
   gap: 20px;
@@ -84,13 +84,13 @@ header a {
   justify-content: center;
 }
 
-.dropdowns .select_1 {
+.ragaca .select_1 {
   background-color: transparent;
   color: #f57325;
   border: 1px solid #f57325;
 }
 
-.dropdowns .select_2 {
+.ragaca .select_2 {
   background-color: #333df0;
 }
 

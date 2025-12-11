@@ -16,30 +16,42 @@ body {
 header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: black;
   height: 73.7px;
-  gap: 845px;
+  padding: 0 20px;
   flex-wrap: wrap;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+}
+
+.header_left img {
+  height: 40px;
+  width: auto;
 }
 
 header a {
   text-decoration: none;
   color: white;
   font-family: "Roboto", sans-serif;
-  width: 77px;
-  height: 19px;
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #f57325;
 }
 
 .header_Right {
-  gap: 75px;
+  gap: 30px;
   display: flex;
-  width: 229px;
-  height: 19px;
+  align-items: center;
 }
 
 .footer {
@@ -322,12 +334,9 @@ header a {
     width: 100%;
     flex-direction: column;
   }
-}
 
-@media (max-width: 1024px) {
   .contact-section {
     padding: 60px 30px;
-    min-height: auto;
   }
 
   .contact-container {
@@ -343,10 +352,7 @@ header a {
 
   .quote-box {
     padding: 40px 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
   }
 
   .quote-box p {
@@ -357,37 +363,58 @@ header a {
     font-size: 36px;
     margin-bottom: 30px;
   }
-
-  .form-group input,
-  .form-group textarea {
-    padding: 11px 14px;
-    font-size: 15px;
-  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .contact-section {
-    padding: 55px 25px;
+    padding: 50px 25px;
   }
 
   .contact-container {
-    gap: 60px;
+    gap: 40px;
+  }
+
+  .contact-quote,
+  .contact-form-section {
+    flex: 1 1 100%;
   }
 
   .quote-box {
-    padding: 38px 32px;
+    padding: 35px 25px;
+    width: 100%;
+    min-height: 250px;
   }
 
   .quote-box p {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .contact-form-section h2 {
-    font-size: 38px;
+    font-size: 32px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  header a {
+    font-size: 14px;
+  }
+
+  .header_Right {
+    gap: 20px;
+  }
+
   .footer {
     padding: 40px 20px;
   }
@@ -425,13 +452,13 @@ header a {
   }
 
   .contact-section {
-    padding: 50px 20px;
+    padding: 40px 20px;
     min-height: auto;
   }
 
   .contact-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     align-items: stretch;
   }
 
@@ -443,74 +470,9 @@ header a {
   }
 
   .quote-box {
-    padding: 35px 25px;
+    padding: 30px 20px;
+    width: 100%;
     min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .quote-box p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-  .quote-line {
-    width: 50px;
-  }
-
-  .contact-form-section h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-
-  .form-group input,
-  .form-group textarea {
-    padding: 10px 12px;
-    font-size: 13px;
-  }
-
-  .submit-btn {
-    padding: 12px 18px;
-    font-size: 14px;
-    margin-top: 8px;
-  }
-}
-
-@media (max-width: 600px) {
-  html,
-  body {
-    font-size: 14px;
-  }
-
-  header {
-    gap: 20px;
-    padding: 10px;
-    height: auto;
-  }
-
-  header a {
-    font-size: 12px;
-    width: auto;
-    height: auto;
-  }
-
-  .header_Right {
-    gap: 15px;
-    width: auto;
-    height: auto;
-  }
-
-  .contact-section {
-    padding: 35px 15px;
-  }
-
-  .contact-container {
-    gap: 25px;
-  }
-
-  .quote-box {
-    padding: 25px 20px;
   }
 
   .quote-box p {
@@ -519,18 +481,14 @@ header a {
   }
 
   .contact-form-section h2 {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 25px;
-  }
-
-  .form-group {
-    gap: 8px;
   }
 
   .form-group input,
   .form-group textarea {
     padding: 10px 10px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .form-group textarea {
@@ -538,8 +496,107 @@ header a {
   }
 
   .submit-btn {
-    padding: 11px 15px;
+    padding: 12px 16px;
     font-size: 13px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  header a {
+    font-size: 12px;
+  }
+
+  .header_Right {
+    gap: 15px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-section {
+    padding: 30px 15px;
+  }
+
+  .contact-container {
+    gap: 20px;
+  }
+
+  .quote-box {
+    padding: 20px 15px;
+    min-height: 150px;
+  }
+
+  .quote-box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0;
+  }
+
+  .quote-box .line {
+    height: 1px;
+    width: 30px;
+    background-color: #f57325;
+  }
+
+  .contact-form-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    gap: 5px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+
+  .form-group textarea {
+    min-height: 80px;
+  }
+
+  .submit-btn {
+    padding: 10px 12px;
+    font-size: 12px;
     margin-top: 5px;
+  }
+
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-column h3 {
+    font-size: 18px;
+  }
+
+  .footer-column h4 {
+    font-size: 12px;
+  }
+
+  .footer-description {
+    font-size: 12px;
+  }
+
+  .footer-column ul li a {
+    font-size: 12px;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
   }
 }
